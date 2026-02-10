@@ -16,3 +16,8 @@ pip install -r requirements.txt
 python src/train.py
 ```
 
+## Dataset Download
+Download the datasets from:
+https://drive.google.com/drive/u/4/folders/1d3W8DfFBBcL4DpDhLL7hicVq1CG3ihNP
+
+After downloading, place the files in the `datasets/` folder.

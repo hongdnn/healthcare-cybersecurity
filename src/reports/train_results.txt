@@ -26,3 +26,33 @@ MQTT-DDoS-Connect-Flood     1.0000    1.0000    1.0000      2000
  [    0     0     0     0 20857]]
         Labels:
         ['ARP_Spoofing', 'Benign', 'MQTT-DDoS-Connect-Flood', 'Recon-Port_Scan', 'TCP_IP-DoS-ICMP1']
+________________________________________________________________________________________________________
+
+        Logistic Regression result:
+        Dataset: 220448 rows, 19 columns
+        Target column: attack_type
+        Train size: 176358 rows
+        Test size: 44090 rows
+        Accuracy: 0.9549
+ 
+        Classification report:
+                                 precision    recall  f1-score   support
+ 
+           ARP_Spoofing       0.7600    0.7738    0.7668      3209
+                 Benign       0.6131    0.9130    0.7336      2000
+MQTT-DDoS-Connect-Flood       0.9970    0.9920    0.9945      2000
+        Recon-Port_Scan       0.9967    0.9333    0.9640     16024
+       TCP_IP-DoS-ICMP1       1.0000    0.9998    0.9999     20857
+ 
+               accuracy                           0.9549     44090
+              macro avg       0.8734    0.9224    0.8918     44090
+           weighted avg       0.9611    0.9549    0.9565     44090
+ 
+        Confusion matrix:
+        [[ 2483   707     5    14     0]
+         [  165  1826     0     9     0]
+         [    0     3  1984    13     0]
+         [  624   438     5 14957     0]
+         [    4     0     0     0 20853]]
+        Labels:
+        ['ARP_Spoofing', 'Benign', 'MQTT-DDoS-Connect-Flood', 'Recon-Port_Scan', 'TCP_IP-DoS-ICMP1']
